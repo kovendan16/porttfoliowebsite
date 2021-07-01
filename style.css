@@ -12,10 +12,8 @@
     outline: none; border:none;
     text-transform: capitalize;
     transition: all .2s linear;
-    
 }
 
-}
 *::selection{
     background:var(--yellow);
     color:#333;
@@ -27,7 +25,7 @@ html{
 }
 
 html::-webkit-scrollbar{
-    width:1.7rem;
+    width:1.4rem;
 }
 
 html::-webkit-scrollbar-track{
@@ -39,11 +37,10 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#1a1a1a;
+    background:#111;
     overflow-x: hidden;
     padding-left: 35rem;
-    animation: change 6s ;
-    
+    animation: change 6s;
 }
 
 section{
@@ -77,7 +74,6 @@ section{
     padding:1rem;
     border-bottom: .1rem solid #fff4;
     color:#fff;
-
 }
 
 .heading span{
@@ -103,7 +99,7 @@ header .user img{
     height:17rem;
     width:17rem;
     border-radius: 50%;
-    background-size: cover;
+    object-fit: cover;
     margin-bottom: 1rem;
     border:.7rem solid var(--yellow);
 }
@@ -294,7 +290,7 @@ header .navbar ul li a:hover{
     height: 20rem;
     width:26rem;
     border-radius: 1rem;
-    margin:20px 90px;
+    margin:2rem;
     overflow: hidden;
     cursor: pointer;
 }
@@ -302,7 +298,7 @@ header .navbar ul li a:hover{
 .portfolio .box-container .box img{
     height:100%;
     width:100%;
-    background-size: cover;
+    object-fit: cover;
 }
 
 .portfolio .box-container .box:hover img{
@@ -318,9 +314,15 @@ header .navbar ul li a:hover{
 
 .contact .row .content{
     flex:1 1 30rem;
-    padding:0px 380px;
-    
+    padding:4rem;
     padding-bottom: 0;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
 }
 
 .contact .row .content .info h3{
@@ -328,13 +330,13 @@ header .navbar ul li a:hover{
     align-items: center;
     font-size: 2rem;
     color:#eee;
-    padding:1rem 0;
+    padding:10px 390px;
     font-weight: normal;
 }
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color:none;
+    color:var(--yellow);
 }
 
 .top{
@@ -343,6 +345,7 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
+
 
 
 
@@ -431,16 +434,7 @@ header .navbar ul li a:hover{
 
  }
 
- 
- 
- 
- @keyframes change
- {
-     0%
-     {background-color:none;}
- 100%
- {background-color:yellowgreen;}
- 
+ @keyframes change{
+    0%{background: greenyellow;}
+    100%{background: #111;}
  }
-
-h6{color: #fff;}
