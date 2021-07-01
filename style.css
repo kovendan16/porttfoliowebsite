@@ -40,7 +40,7 @@ body{
     background:#111;
     overflow-x: hidden;
     padding-left: 35rem;
-    animation: change 6s;
+    animation: change 10s;
 }
 
 section{
@@ -92,7 +92,7 @@ header{
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    animation: change 6s;
+    animation: change 10s;
 }
 
 header .user img{
@@ -283,7 +283,7 @@ header .navbar ul li a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:2rem 0;
+    padding:10px 40px;
 }
 
 .portfolio .box-container .box{
